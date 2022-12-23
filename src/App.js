@@ -1,4 +1,5 @@
-import ExpenseItem from "./components/ExpenseItem.js";
+import React from 'react';
+import Expenses from "./components/Expenses/Expenses.js";
 
 function App() {
   // let expenseDate = new Date(2022, 12, 12);
@@ -27,9 +28,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <ExpenseItem date={itemArray[0].date} title={itemArray[0].title} amount={itemArray[0].amount}></ExpenseItem>
-      <ExpenseItem date={itemArray[1].date} title={itemArray[1].title} amount={itemArray[1].amount}></ExpenseItem>
-      <ExpenseItem date={itemArray[2].date} title={itemArray[2].title} amount={itemArray[2].amount}></ExpenseItem>
+      <Expenses item={itemArray}/>
     </div>
   );
 }
