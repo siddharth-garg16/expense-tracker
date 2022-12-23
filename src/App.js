@@ -1,7 +1,7 @@
 import React from 'react';
 import Expenses from "./components/Expenses/Expenses.js";
 
-function App() {
+const App = () => {
   // let expenseDate = new Date(2022, 12, 12);
   // let expenseAmount = 300;
   // let expenseTitle = "School Fee";

@@ -4,7 +4,7 @@ import Card from "../UI/Card.js";
 import React from 'react';
 
 
-function Expenses(props){
+const Expenses = (props) => {
     return (
         <Card className="expenses">
             <ExpenseItem date={props.item[0].date} title={props.item[0].title} amount={props.item[0].amount} />
